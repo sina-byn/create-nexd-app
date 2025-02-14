@@ -18,6 +18,7 @@
     "@types/node": "^22.13.4",
     "@types/prompts": "^2.4.9",
     "@vercel/ncc": "^0.38.3",
+    "execa": "^9.5.2",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
