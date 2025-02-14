@@ -1,0 +1,24 @@
+{
+  "name": "create-nexd-app",
+  "version": "0.0.0",
+  "bin": "bin/index.js",
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "dev": "nodemon -r ts-node --transpileOnly -r tsconfig-paths/register src/index.ts",
+    "build": "ncc build src/index.ts -o bin --minify",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3"
+  }
+}
