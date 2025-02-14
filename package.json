@@ -15,6 +15,7 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
+    "@types/node": "^22.13.4",
     "@types/prompts": "^2.4.9",
     "@vercel/ncc": "^0.38.3",
     "nodemon": "^3.1.9",
