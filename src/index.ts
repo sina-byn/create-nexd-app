@@ -8,6 +8,9 @@ import prompts from 'prompts';
 
 import { program } from 'commander';
 
+// * utils
+import { savePkgJson, loadPkgJson } from './utils/pkg';
+
 // ! template feature will be later implemented
 
 process.on('uncaughtException', (err: Error) => {
@@ -52,7 +55,7 @@ const createApp = async () => {
 
   const spinner = ora({ color: 'blue' }).start(pc.blueBright('Cloning nexd starter template...'));
 
-  const emitter = degit('sina-byn/nexd');
+  const emitter = degit('sina-byn/cmtu');
 
   await emitter.clone(appDir);
   spinner.succeed(pc.greenBright('Template cloned successfully'));
@@ -70,6 +73,19 @@ const createApp = async () => {
     await $`npm i`;
     spinner.succeed(pc.greenBright('Dependencies installed successfully'));
   }
+
+  const pkg = {
+    ...loadPkgJson(),
+    version: '0.0.0',
+    repository: 'github:',
+    description: '',
+    author: ' <> ()',
+    homepage: '',
+    bugs: { url: '', email: '' },
+    keywords: [],
+  };
+
+  savePkgJson(pkg);
 
   console.log(pc.greenBright('✅ Nexd app initialized successfully'));
 };
