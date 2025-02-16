@@ -76,6 +76,7 @@ const createApp = async () => {
 
   const pkg = {
     ...loadPkgJson(),
+    name: appName,
     version: '0.0.0',
     repository: 'github:',
     description: '',
