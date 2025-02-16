@@ -75,3 +75,5 @@ const createApp = async () => {
 };
 
 program.action(async () => await createApp());
+
+program.parse(process.argv);
