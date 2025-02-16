@@ -76,4 +76,4 @@ const createApp = async () => {
   }
 };
 
-program.action(() => createApp());
+program.action(async () => await createApp());
