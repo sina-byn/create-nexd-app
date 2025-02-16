@@ -63,7 +63,7 @@ const createApp = async () => {
 
   process.chdir(appDir);
 
-  if (gitInit) $({ stdio: 'inherit' })`git init`;
+  if (gitInit) await $({ stdio: 'inherit' })`git init`;
 
   if (npmInstall) {
     spinner.start(pc.blueBright('Installing dependencies...'));
