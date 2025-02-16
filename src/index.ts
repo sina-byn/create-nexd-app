@@ -60,8 +60,8 @@ const createApp = async () => {
   process.chdir(appDir);
 
   if (gitInit) {
-    spinner.start(pc.blueBright('Initializing Git repository...\n'));
-    await $({ stdio: 'inherit' })`git init`;
+    spinner.start(pc.blueBright('Initializing Git repository...'));
+    await $`git init`;
     spinner.succeed(pc.greenBright('Git repository initialized'));
   }
 
