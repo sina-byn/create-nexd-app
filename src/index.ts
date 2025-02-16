@@ -6,6 +6,8 @@ import degit from 'degit';
 import pc from 'picocolors';
 import prompts from 'prompts';
 
+import { program } from 'commander';
+
 // ! template feature will be later implemented
 
 process.on('uncaughtException', (err: Error) => {
@@ -73,3 +75,5 @@ const createApp = async () => {
     spinner.succeed(pc.greenBright('Dependencies installed successfully'));
   }
 };
+
+program.action(() => createApp());
