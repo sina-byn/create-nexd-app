@@ -55,7 +55,7 @@ const createApp = async () => {
 
   const spinner = ora({ color: 'blue' }).start(pc.blueBright('Cloning nexd starter template...'));
 
-  const emitter = degit('sina-byn/cmtu');
+  const emitter = degit('sina-byn/nexd');
 
   await emitter.clone(appDir);
   spinner.succeed(pc.greenBright('Template cloned successfully'));
