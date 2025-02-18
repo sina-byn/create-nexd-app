@@ -89,6 +89,11 @@ const createApp = async () => {
   savePkgJson(pkg);
 
   console.log(pc.greenBright('✅ Nexd app initialized successfully'));
+
+  if (appName !== '.') console.log(pc.blueBright(`📂 Run: cd ${appName}`));
+  console.log(pc.yellowBright('🚀 Start with: npm run nexd'));
+
+  process.exit();
 };
 
 program.action(async () => await createApp());
