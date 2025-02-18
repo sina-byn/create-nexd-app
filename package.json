@@ -11,10 +11,11 @@
     "build": "ncc build src/index.ts -o bin --minify",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
   "license": "MIT",
-  "description": "",
+  "repository": "github:sina-byn/create-nexd-app",
+  "description": "nexd create-app cli",
+  "author": "Sina Bayandorian <sina.sina.bayan@protonmail.com> (https://portfolio-sina-byn.vercel.app/)",
+  "homepage": "https://nexd-docs.vercel.app/",
   "devDependencies": {
     "@types/degit": "^2.8.6",
     "@types/node": "^22.13.4",
@@ -33,5 +34,19 @@
     "ora": "^8.2.0",
     "picocolors": "^1.1.1",
     "prompts": "^2.4.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/sina-byn/create-nexd-app/issues",
+    "email": "sina.sina.bayan@protonmail.com"
+  },
+  "keywords": [
+    "cli",
+    "react",
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "documentation",
+    "documentation-site",
+    "documentation-generator"
+  ]
 }
