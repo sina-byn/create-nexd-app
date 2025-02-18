@@ -1,6 +1,6 @@
 {
   "name": "create-nexd-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "bin": "bin/index.js",
   "files": [
     "bin"
